@@ -31,6 +31,13 @@
 
 unsigned char XSize, YSize;
 
+/*
+    setupvideomode
+        We need the PETSCII characterset not the standard ISO-8859 charset that CC65 supports
+        so we use the conio.h and cx§6.h that defines a function to let us setup UPPERCASE PETSCII
+        We also go to 40x30 mode to be more retro! And finally we read th screensize.
+        Like using ncurses with normal C.
+*/
 void setupvideomode(void) 
 {
 
@@ -42,6 +49,10 @@ void setupvideomode(void)
 
 }
 
+/*
+    setdefaultvidemode
+    This function "resets" to the normal colorbackground and default 80x60 charactermode
+*/
 void setdefaultvideomode(void) 
 {
 
