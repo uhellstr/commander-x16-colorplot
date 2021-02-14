@@ -65,6 +65,13 @@ void setdefaultvideomode(void)
 
 }
 
+/*
+    introscreen
+        This just introduce a very simple introscreen or setup or whatever...
+        We are setting textcolor, border and backgroundcolors.
+        We clear the screeen and turn of the cursor.
+        And we use a very simple "Plot" function for characters.
+*/
 void introscreen(void) 
 {
 
@@ -81,6 +88,14 @@ void introscreen(void)
 
 }
 
+/*
+    randomcolor
+        This is a real C-function introduce rand in C
+        and we use this to get a raandom Color for
+        our character output and returns a number
+        in a given range we send as inparameters 
+        to the function.
+*/
 int randomcolor(int lower, int upper) 
 { 
 
@@ -89,6 +104,13 @@ int randomcolor(int lower, int upper)
     return num;  
 } 
 
+/*
+    plotter is where the magic occurs and here we
+    use for loop functions to loop over all
+    possible positions on our 40x30 screen and
+    print out a PETSCII character in a a ramdon
+    color on each position.
+*/
 void plotter(void) 
 {
    
@@ -105,6 +127,13 @@ void plotter(void)
 
 }
 
+/*
+    main: Every C-program that is not a library
+    and should execute something must have a main
+    functions. THis is what actually is called
+    when we run the program in a Commander X16 emulator
+    and in the futurure possible on the real hardware.
+*/
 int main(void) 
 {
     int quit = 0;
