@@ -5,6 +5,7 @@
     Puropse:        Educational
     
     Note: You need installed cc65 cross compiler with cx16 support.
+    https://github.com/cc65/cc65
 
     On Mac you can install with Homebrew (INCLUDING NEW M1 MACS) with brew install cc65
     Or you can build ccc65 yourself directly from github repo.
